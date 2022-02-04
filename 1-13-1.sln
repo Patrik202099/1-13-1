@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szorzoTabla", "szorzoTabla\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Számológép", "Számológép\Számológép.csproj", "{432428C9-24BC-4BB0-AEFD-C0435D8EC091}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoPapirOllo", "KoPapirOllo\KoPapirOllo.csproj", "{C55D4264-7B77-418B-808C-540D05BF77F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{432428C9-24BC-4BB0-AEFD-C0435D8EC091}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{432428C9-24BC-4BB0-AEFD-C0435D8EC091}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{432428C9-24BC-4BB0-AEFD-C0435D8EC091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C55D4264-7B77-418B-808C-540D05BF77F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55D4264-7B77-418B-808C-540D05BF77F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55D4264-7B77-418B-808C-540D05BF77F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55D4264-7B77-418B-808C-540D05BF77F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
