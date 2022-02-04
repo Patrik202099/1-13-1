@@ -10,43 +10,42 @@ namespace Számológép
     {
         static void Main(string[] args)
         {
-            int firstNum, secondNum;
-            string op;
+            int x, y;
+            char op;
 
-            Console.WriteLine("Helló!");
+                Console.WriteLine("Az első szám: ");
+                x = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Add meg az első számot:");
-            firstNum = Convert.ToInt32(Console.ReadLine());
-            
-            Console.WriteLine("Add meg a műveletet:");
-            oper = Console.ReadLine();
+                Console.WriteLine("A művelet(+, -, *, /): ");
+                op = Convert.ToChar(Console.Read());
 
-            Console.WriteLine("Add meg az első számot:");
-            secondNum = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("A második szám: ");
+                y = int.Parse(Console.ReadLine());
 
-            int result = 0;
+                int result = 0;
 
-            switch(op)
+                switch (op)
+                {
 
-            {
-                case '+':
-                    result = firstNum + secondNum;
-                    break
+                    case '+':
+                        result = x + y;
+                        break;
 
-                case '-':
-                    result = firstNum - secondNum;
-                    break
+                    case '-':
+                        result = x - y;
+                        break;
 
-                case '*':
-                    result = firstNum * secondNum;
-                    break
+                    case '*':
+                        result = x * y;
+                        break;
 
-                case '/':
-                    result = firstNum / secondNum;
-                    break
-            }
-            Console.WriteLine(result);
-            Console.ReadKey();
+                    case '/':
+                        result = x / y;
+                        break;
+
+                }
+
+                Console.WriteLine("A művelet eredménye: ", result);
         }
     }
 }
