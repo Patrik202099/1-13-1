@@ -11,7 +11,7 @@ namespace Számológép
         static void Main(string[] args)
         {
             int firstNum, secondNum;
-            string oper;
+            string op;
 
             Console.WriteLine("Helló!");
 
@@ -24,27 +24,28 @@ namespace Számológép
             Console.WriteLine("Add meg az első számot:");
             secondNum = Convert.ToInt32(Console.ReadLine());
 
-            
-            if (oper == "-") 
-            {
-                Console.WriteLine(firstNum - secondNum);
-            }
+            int result = 0;
 
-            if (oper == "+")
-            {
-                Console.WriteLine(firstNum + secondNum);
-            }
+            switch(op)
 
-            if (oper == "/")
             {
-                Console.WriteLine(firstNum / secondNum);
-            }
+                case '+':
+                    result = firstNum + secondNum;
+                    break
 
-            if (oper == "*")
-            {
-                Console.WriteLine(firstNum * secondNum);
-            }
+                case '-':
+                    result = firstNum - secondNum;
+                    break
 
+                case '*':
+                    result = firstNum * secondNum;
+                    break
+
+                case '/':
+                    result = firstNum / secondNum;
+                    break
+            }
+            Console.WriteLine(result);
             Console.ReadKey();
         }
     }

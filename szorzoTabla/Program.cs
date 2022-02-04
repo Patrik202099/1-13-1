@@ -17,7 +17,6 @@ namespace szorzoTabla
             Console.WriteLine("Add meg az első számot:");
             elsoSzam = Convert.ToInt32(Console.ReadLine());
 
-
             Console.WriteLine("Add meg a második számot:");
             masodikSzam = Convert.ToInt32(Console.ReadLine());
 
