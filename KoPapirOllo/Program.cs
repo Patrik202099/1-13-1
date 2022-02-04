@@ -20,6 +20,15 @@ namespace KoPapirOllo
 
             Console.WriteLine("Helló!");
 
+            bool j = true;
+            do
+            {
+                Console.WriteLine("Szeretnél még játszani? (i / n)");
+
+                if (Console.ReadKey(true).KeyChar == 'n')
+                    j = false;
+            } while (j);
+
             Console.WriteLine("Mit választasz? (k/p/o)");
 
             switch(Console.ReadKey(true).KeyChar)
@@ -57,7 +66,36 @@ namespace KoPapirOllo
                )
             {
                 Console.WriteLine("Sajnos vesztettél!");
-             }
+                szamitoPont ++;
+                Console.WriteLine("A jelenlegi állás: \n Számítógép: {0} \n Játékos: {1}", szamitoPont, jatekosPont);
+            }
+            else if (jatekosValaszt == szamitoValaszt)
+            {
+                Console.WriteLine("A jelenlegi állás: \n Számítógép: {0} \n Játékos: {1}", szamitoPont, jatekosPont);
+            }
+            else
+            {
+                Console.WriteLine("Ezt a kört te nyerted! Gratulálok!");
+                jatekosPont ++;
+                Console.WriteLine("Az állás: \n Számítógép: {0} \n Játékos: {1}", szamitoPont, jatekosPont);
+            }
+            if (
+                jatekosPont == 5
+                ||
+                szamitoPont == 5
+
+               )
+                {
+                        if (jatekosPont == 5)
+                    {
+                        Console.WriteLine("A játéknak vége, a nyertes TE VAGY!");
+                    }
+                        else if (szamitoPont == 5)
+                        {
+                        Console.WriteLine("A játéknak vége, a nyertes A SZÁMÍTÓGÉP.");
+                    }
+                }
+        Console.ReadKey();
         }
     }
 }
