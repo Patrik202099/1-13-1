@@ -18,11 +18,12 @@ namespace Calculator
             Console.WriteLine("Add meg az első számot!: ");
             firstNum = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Add meg a művelettípust (+ , - , / , *)");
+            op = Convert.ToChar(Console.ReadLine());
+
             Console.WriteLine("Add meg a második számot!: ");
             secondNum = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Add meg a művelettípust (+ , - , / , *)");
-            op = Convert.ToChar(Console.Read());
 
             switch (op)
             {
