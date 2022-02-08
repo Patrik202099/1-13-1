@@ -15,26 +15,28 @@ namespace KoPapirOllo
             string playerChoice = "";
             string compChoice = "";
 
-            int playerPoint = 0;
-            int compPoint = 0;
+            int playerScore = 0;
+            int compScore = 0;
 
             Console.WriteLine("Üdvözöllek!");
 
             bool g = true;
-            do
-            {
-                Console.WriteLine("Szeretnél még játszani? (i / n)");
+            
+               Console.WriteLine("Szeretnél még játszani? (i / n)");
 
-                if (Console.ReadKey(true).KeyChar == 'n')
+                if (Console.ReadKey().KeyChar != 'i')
                 {
                     g = false;
                     Console.WriteLine("Viszlát!");
-                    break; 
+                    Environment.Exit(0);
                 }
-            } while (g == true);
 
-            Console.WriteLine("Mit választasz?: ");
-            switch (Console.ReadKey(true).KeyChar)
+                
+            { 
+                while (g == true);
+
+                Console.WriteLine("Mit választasz?: (k / p / o)");
+                switch (Console.ReadKey(true).KeyChar)
 
             {
                 case 'k':
@@ -49,8 +51,48 @@ namespace KoPapirOllo
                     playerChoice = "olló";
                     break;
             }
+                switch (rnd.Next(0, 3))
 
-            Console.ReadKey();
+                {
+
+                    case 0:
+                        compChoice = "kő";
+                        break;
+
+                    case 1:
+                        compChoice = "papír";
+                        break;
+
+                    case 2:
+                        compChoice = "olló";
+                        break;
+
+                }
+                if ( 
+                    (playerChoice == "kő" && compChoice == "papír")  
+                    || 
+                    (playerChoice == "papír" && compChoice == "olló")
+                    ||
+                    (playerChoice == "olló" && compChoice == "kő")
+                   ) 
+
+                { Console.WriteLine("Veszítettél! Az állás:\nSzámítógép: {0}\nJátékos:{1}", 
+                    ++compScore, playerScore); 
+                }
+
+                else if (playerChoice == compChoice) 
+                { Console.WriteLine("Döntetlen! Az állás:\nSzámítógép: {0}\nJátékos:{1}", 
+                    compScore, playerScore); 
+                } 
+
+                else
+                { 
+                    Console.WriteLine("Nyertél! Az állás:\nSzámítógép: {0}\nJátékos:{1}",  
+                    compScore, ++playerScore); 
+
+                } 
+          }
+           
         }
     }
 }
