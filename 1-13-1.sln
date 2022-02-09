@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{96D47B0F-D307-478E-ACA4-B29ED1C18933}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szorzoTabla", "szorzoTabla\szorzoTabla.csproj", "{0DC73E75-7A5E-4A49-B77E-81A2BF514DE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szorzoTabla", "szorzoTabla\szorzoTabla.csproj", "{69B8D901-CB07-47C2-B2D3-647642C60240}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Számológép", "Számológép\Számológép.csproj", "{432428C9-24BC-4BB0-AEFD-C0435D8EC091}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoPapirOllo", "KoPapirOllo\KoPapirOllo.csproj", "{C55D4264-7B77-418B-808C-540D05BF77F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoPapirOllo", "KoPapirOllo\KoPapirOllo.csproj", "{4C473777-BE6F-4594-9FB1-EC1F338F93A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szamkitalalo", "Szamkitalalo\Szamkitalalo.csproj", "{2B5F81BF-B08B-4828-91A6-4D187E233FA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +23,22 @@ Global
 		{96D47B0F-D307-478E-ACA4-B29ED1C18933}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96D47B0F-D307-478E-ACA4-B29ED1C18933}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96D47B0F-D307-478E-ACA4-B29ED1C18933}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0DC73E75-7A5E-4A49-B77E-81A2BF514DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0DC73E75-7A5E-4A49-B77E-81A2BF514DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0DC73E75-7A5E-4A49-B77E-81A2BF514DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0DC73E75-7A5E-4A49-B77E-81A2BF514DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69B8D901-CB07-47C2-B2D3-647642C60240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B8D901-CB07-47C2-B2D3-647642C60240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B8D901-CB07-47C2-B2D3-647642C60240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B8D901-CB07-47C2-B2D3-647642C60240}.Release|Any CPU.Build.0 = Release|Any CPU
 		{432428C9-24BC-4BB0-AEFD-C0435D8EC091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{432428C9-24BC-4BB0-AEFD-C0435D8EC091}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{432428C9-24BC-4BB0-AEFD-C0435D8EC091}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{432428C9-24BC-4BB0-AEFD-C0435D8EC091}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C55D4264-7B77-418B-808C-540D05BF77F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C55D4264-7B77-418B-808C-540D05BF77F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C55D4264-7B77-418B-808C-540D05BF77F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C55D4264-7B77-418B-808C-540D05BF77F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C473777-BE6F-4594-9FB1-EC1F338F93A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C473777-BE6F-4594-9FB1-EC1F338F93A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C473777-BE6F-4594-9FB1-EC1F338F93A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C473777-BE6F-4594-9FB1-EC1F338F93A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5F81BF-B08B-4828-91A6-4D187E233FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5F81BF-B08B-4828-91A6-4D187E233FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5F81BF-B08B-4828-91A6-4D187E233FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5F81BF-B08B-4828-91A6-4D187E233FA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
