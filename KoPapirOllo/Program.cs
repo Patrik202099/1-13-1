@@ -21,24 +21,12 @@ namespace KoPapirOllo
             Console.WriteLine("Üdvözöllek!");
 
             bool g = true;
-            
-               Console.WriteLine("Szeretnél még játszani? (i / n)");
 
-                if (Console.ReadKey().KeyChar != 'i')
-                {
-                    g = false;
-                    Console.WriteLine("Viszlát!");
-                    Environment.Exit(0);
-                }
-
-                
-            { 
-                while (g == true);
-
+            do
+            {
                 Console.WriteLine("Mit választasz?: (k / p / o)");
                 switch (Console.ReadKey(true).KeyChar)
-
-            {
+            { 
                 case 'k':
                     playerChoice = "kő";
                     break;
@@ -68,33 +56,33 @@ namespace KoPapirOllo
                         break;
 
                 }
-                if ( 
-                    (playerChoice == "kő" && compChoice == "papír")  
-                    || 
+                if (
+                    (playerChoice == "kő" && compChoice == "papír")
+                    ||
                     (playerChoice == "papír" && compChoice == "olló")
                     ||
                     (playerChoice == "olló" && compChoice == "kő")
-                   ) 
+                   )
 
-                { Console.WriteLine("Veszítettél! Az állás:\nSzámítógép: {0}\nJátékos:{1}", 
-                    ++compScore, playerScore); 
+                { Console.WriteLine("Veszítettél! Az állás:\nSzámítógép: {0}\nJátékos:{1}",
+                    ++compScore, playerScore);
                 }
 
-                else if (playerChoice == compChoice) 
-                { Console.WriteLine("Döntetlen! Az állás:\nSzámítógép: {0}\nJátékos:{1}", 
-                    compScore, playerScore); 
-                } 
+                else if (playerChoice == compChoice)
+                { Console.WriteLine("Döntetlen! Az állás:\nSzámítógép: {0}\nJátékos:{1}",
+                    compScore, playerScore);
+                }
 
                 else
-                { 
-                    Console.WriteLine("Nyertél! Az állás:\nSzámítógép: {0}\nJátékos:{1}",  
-                    compScore, ++playerScore); 
-
-                } 
+                {
+                    Console.WriteLine("Nyertél! Az állás:\nSzámítógép: {0}\nJátékos:{1}",
+                    compScore, ++playerScore);
+                }
+                Console.WriteLine("Szeretnél még játszani? (i / n)");
+                
+            }    while (Console.ReadKey(true).KeyChar == 'i');
           }
-           
         }
     }
-}
 
 
