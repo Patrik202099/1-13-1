@@ -27,7 +27,7 @@ namespace Szamkitalalo
             { 
                 switch (decision)
             {
-                
+                  
                 case 'j':
                     Console.WriteLine("A játékos tippel.");
                     Console.WriteLine(compChoice);
