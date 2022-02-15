@@ -22,7 +22,11 @@ namespace TestTomegIndex
 
             Console.WriteLine("A BMI értéked: " + Math.Round(testsuly / (magassag * magassag) * 10000,2));
             bmi = Convert.ToDouble(Console.ReadLine());
-
+            
+            if (bmi > 16)
+            {
+                Console.WriteLine("Súlyosan sovány vagy!");
+            }
             Console.ReadKey();
         }
     }
