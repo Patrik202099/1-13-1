@@ -10,93 +10,88 @@ namespace Szamkitalalo
     {
         static void Main(string[] args)
         {
+            int alsohatar = 1,
+                felsohatar = 11,
+                gondoltszam,
+                tippAlsoHatar,
+                tippFelsoHatar,
+                tipp,
+                probal = 5;
 
-            int playerChance, compChance, playerChoice, compChoice;
-            char decision;
-            playerChance = 5;
-            compChance = 5;
+            char valaszom;
+
+            bool eltalalta = false;
+
             Random rnd = new Random();
-            Console.WriteLine("Üdvözöllek!");
 
-            Console.WriteLine("Ki találja ki a számot? (j / g)");
-            decision = Convert.ToChar(Console.ReadLine());
-            compChoice = rnd.Next(1, 101);
-
-            START:
-            while (playerChance > 0 && compChance > 0)
-            { 
-                switch (decision)
+            do
             {
-                  
-                case 'j':
-                    Console.WriteLine("A játékos tippel.");
-                    Console.WriteLine(compChoice);
-                    Console.WriteLine("Tippeld meg a számot: ");
-                    playerChoice = Convert.ToInt32(Console.ReadLine());
-                    if (compChoice == playerChoice)
-                    {
-                        Console.WriteLine("Gratulálok, eltaláltad!");
-                        playerChance -= 1;
-                        goto WINJ;
-                        
-                    }
-                    else if (compChoice != playerChoice)
-                    {
-                        Console.WriteLine("Sajnos nem sikerült eltalálnod, próbáld újra.");
-                        playerChance -= 1;
-                        Console.WriteLine(playerChance + " lehetőséged maradt.");
-                        if (playerChance == 0)
-                            {
-                                goto WING;
-                            }
-                        else
-                            {
-                                goto START;
-                            }
-                    }
-                    break;
+                Console.WriteLine("Leszel az aki gondol egy számra? (i / n): ");
+                if (Console.ReadKey().KeyChar == 'n')
+                {
+                    gondoltszam = rnd.Next(alsohatar, felsohatar);
 
-                case 'g':
-                    Console.WriteLine("A gép tippel.");
-                    Console.WriteLine("Válassz egy számot 1 és 100 között: ");
-                    playerChoice = Convert.ToInt32(Console.ReadLine());
-                    if (playerChoice == compChoice)
+                    for (int i = 0; i <= probal; i++)
                     {
-                        Console.WriteLine("A gép eltalálta a számot!");
-                        compChance -= 1;
-                        goto WING;
-                    }
-                    else if (playerChoice != compChoice)
-                    {
-                        Console.WriteLine("A gép NEM találta el a számot!");
-                        compChance -= 1;
-                        Console.WriteLine(compChance + " lehetősége maradt a gépnek.");
-                            if (compChance == 0)
-                            {
-                                goto WINJ;
-                            }
-                            else
-                            {
-                                goto START;
-                            }
+                        Console.WriteLine("\nTippeljen!");
+                        tipp = int.Parse(Console.ReadLine());
+                        if (gondoltszam < tipp)
+                        {
+                            Console.WriteLine("Kisebb számra gondoltam");
                         }
-                    break;
-            }
-            WING:
-       
-                Console.WriteLine("Sajnos vesztettél. Máskor sikerülni fog.");
-                Console.WriteLine(compChance + " lehetőséggel a GÉP nyerte a játékot.");
-                System.Threading.Thread.Sleep(5000);
-                Environment.Exit(0);
-            
-            WINJ:
-            
-                Console.WriteLine(playerChance + " lehetőséggel nyertél, gratulálok!");
-                System.Threading.Thread.Sleep(5000);
-                Environment.Exit(0);
+                        else if (gondoltszam > tipp)
+                        {
+                            Console.WriteLine("Nagyobb számra gondoltam.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Gratulálok eltalálta!");
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    eltalalta = false;
+                    tippAlsoHatar = alsohatar;
+                    tippFelsoHatar = felsohatar;
 
-            }
-            Console.ReadKey();
+                    Console.WriteLine("\n Gondolj egy számra!");
+                    for (int i = 0; i <= probal; i ++j)
+                    {
+                        tipp = tippAlsoHatar + (tippFelsoHatar - tippAlsoHatar) / 2;
+                        Console.WriteLine("Az én tippem {0} \n játékos válasza (n: nagyobbra, k: kisebbre, t: eltalálta");
+
+                        valaszom = Console.ReadKey().KeyChar;
+
+                        if (valaszom == 'n')
+                        {
+                            Console.WriteLine("nagyobb számra gondoltam");
+                            tippAlsoHatar = tipp;
+                        }
+                        else if (valaszom == 'k')
+                        {
+                            Console.WriteLine("kisebbre gondoltam.");
+                            tippFelsoHatar = tipp;
+                        }
+                        else
+                        {
+                            eltalalta = true;
+                            Console.WriteLine("Gratullok!");
+                            break;
+                        }
+                    }
+
+                    if (!eltalalta)
+                    {
+                        Console.WriteLine("Lejárt tippek!");
+                    }
+                }
+                    Console.WriteLine("Folytatjuk a játékot?");
+                }
+                while (Console.ReadKey().KeyChar == 'i');
+               Console.ReadKey();
+            
         }
     }
 }

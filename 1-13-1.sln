@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gyakorlas", "gyakorlas\gyak
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTomegIndex", "TestTomegIndex\TestTomegIndex.csproj", "{5FAC7C64-D1AF-4053-B8BF-157D24C230A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VizGozJeg", "VizGozJeg\VizGozJeg.csproj", "{66C27267-6A9B-46F2-8549-A12AF027BD0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{5FAC7C64-D1AF-4053-B8BF-157D24C230A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FAC7C64-D1AF-4053-B8BF-157D24C230A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FAC7C64-D1AF-4053-B8BF-157D24C230A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66C27267-6A9B-46F2-8549-A12AF027BD0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C27267-6A9B-46F2-8549-A12AF027BD0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C27267-6A9B-46F2-8549-A12AF027BD0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C27267-6A9B-46F2-8549-A12AF027BD0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
