@@ -11,7 +11,7 @@ namespace PontokTavolsaga
         static void Main(string[] args)
         {
 
-            float x1, x2, y1, y2, eredmeny;
+            float x1, x2, y1, y2;
 
             Console.WriteLine("Helló!");
 
