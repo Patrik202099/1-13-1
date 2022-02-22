@@ -28,7 +28,7 @@ namespace majdnemLotto
                     counter ++;
                 }
             }
-            Console.WriteLine("Ennyiszer van benne: {0}", counter);
+            Console.WriteLine(counter,  "{0}x volt hatos.");
             Console.ReadKey();
         }
         
