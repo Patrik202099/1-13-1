@@ -10,20 +10,21 @@ namespace Bekeros
     {
         static void Main(string[] args)
         {
-            List<int> szamLista = new List<int>();
+            var szamLista = new List<int>();
             int beker;
 
             Console.WriteLine("Adj meg egy egész számot: ");
             beker = Convert.ToInt32(Console.ReadLine());
 
             while (beker != 0)
-            {
-                Console.WriteLine("Adj meg egy egész számot: ");
-                beker = Convert.ToInt32(Console.ReadLine());
+            {   
                 szamLista.Add(beker);
+                Console.WriteLine("Adj meg egy egész számot: ");
+                beker = Convert.ToInt32(Console.ReadLine());             
             }
-            Console.WriteLine(szamLista);
+            szamLista.Sort();
+            Console.WriteLine("A legnagyobb szám a listában: {0}", szamLista[szamLista.Count-1]);
             Console.ReadKey();
         }
-    }
+    } 
 }
