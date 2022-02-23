@@ -17,14 +17,12 @@ namespace Konyv
             Console.WriteLine("Add meg a könyv címét: ");
             konyvcim = Convert.ToString(Console.ReadLine());
 
-            while (string.IsNullOrEmpty(konyvcim))
-            {
-                Console.WriteLine("Add meg a könyv címét: ");
-                konyvcim = Convert.ToString(Console.ReadLine());
-            }
+            
 
-            Console.WriteLine("Add meg az oldalak számát: ");
-            oldalszam = Convert.ToInt32(Console.ReadLine());
+            while (!string.IsNullOrEmpty(konyvcim))
+            {
+                Console.WriteLine("Add meg az oldalak számát: ");
+                oldalszam = Convert.ToInt32(Console.ReadLine());
 
             if (oldalszam > 150)
             {
@@ -38,6 +36,12 @@ namespace Konyv
                 Console.WriteLine("A/az " + konyvcim + " egy rövid terjedelmű könyv.");
 
             }
+
+                Console.WriteLine("Add meg a könyv címét: ");
+                konyvcim = Convert.ToString(Console.ReadLine());
+
+            }
+
             Console.ReadKey();
         }
     }
