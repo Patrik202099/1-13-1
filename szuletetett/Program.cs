@@ -21,7 +21,7 @@ namespace szuletetett
 
             Console.WriteLine("Add meg a nevet: ");
             nev = Convert.ToString(Console.ReadLine());
-
+     
             Console.WriteLine("Add meg a foglalkozást: ");
             foglalkozas = Convert.ToString(Console.ReadLine());
 
