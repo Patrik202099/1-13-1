@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace kor
 {
-    // t = 3.14*(r*r)
-    // k = 2*3.14.r
-
     class Kor
     {
-        double beker;
+        private double beker;
 
         public Kor()
-        {
-            
+        { 
         }
 
         public double Kerulet()
@@ -33,17 +29,47 @@ namespace kor
         }
 
     }
+    
+    class Henger:Kor
+    {
+        private double magassag;
 
+        public Henger():base()
+        { }
+
+        public double AlapTerulet()
+        {
+            return this.Terulet();
+        }
+
+        public double Terfogat()
+        {
+            return this.Terulet()*this.magassag;
+        }
+
+        public void setMagassag()
+        {
+            this.magassag = Convert.ToDouble(Console.ReadLine());
+        }
+    }
+    // származtatás henger osztály magasság bekér metódusokkal kiiratni térfogat és alapterület
+    // henger alapterület = 3.14*(r*r)
+    // henger terfogat = 3.14*(r*r)*m
 
     class Program
     {
         static void Main(string[] args)
         {
+            Henger h = new Henger();
             Console.WriteLine("Kör sugara: ");
-            Kor k = new Kor();
-            k.setSugar();
-            Console.WriteLine("A kör kerülete {0}", k.Kerulet());
-            Console.WriteLine("A kör területe {0}", k.Terulet());
+            h.setSugar();
+            Console.WriteLine("Henger magassága: ");
+            h.setMagassag();
+            Console.WriteLine("A kör kerülete {0}", h.Kerulet());
+            Console.WriteLine("A kör területe {0}", h.Terulet());
+            Console.WriteLine("A henger alapterülete: {0}", h.AlapTerulet());
+            Console.WriteLine("A henger térfogata: {0}", h.Terfogat());
+
             Console.ReadKey();
         }
     }
