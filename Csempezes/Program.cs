@@ -23,7 +23,7 @@ namespace Csaempezes
 
             szukseges = (teruletSzelesseg * magassag) / csempe;
 
-            Console.WriteLine(szukseges + szukseges * 0.1 + "darab csempe szükséges.");
+            Console.WriteLine(szukseges + szukseges * 0.1 + " darab csempe szükséges.");
 
             Console.ReadKey();
             
