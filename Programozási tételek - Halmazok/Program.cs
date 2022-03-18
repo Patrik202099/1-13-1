@@ -24,8 +24,8 @@ namespace Programozási_tételek___Halmazok
         {
             for (int i = 0; i < this.A.Length; i++)
             {
-                this.A[i] =this.rnd.Next(0, 5);
-                this.B[i] =this.rnd.Next(0, 5);
+                this.A[i] =this.rnd.Next(-100, 100);
+                this.B[i] =this.rnd.Next(-100, 100);
             }
             foreach (var item in A)
 	        {
@@ -64,10 +64,11 @@ namespace Programozási_tételek___Halmazok
 			{
                 for (int j = 0; j < this.B.Length; j++)
 			{
-                    if (this.A[i] == this.B[j]) 
+                    if (this.A[i] == this.B[j] && i!=j) 
                     {
                         Console.WriteLine("A metszete: {0}", A[i]);
                     }
+                    
 			}
 
 			}
