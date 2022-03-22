@@ -6,77 +6,43 @@ using System.Threading.Tasks;
 
 namespace Homerseklet
 {
-    class Homerseklet
+    public class Homerseklet
     {
-            Dictionary<string, int> honap = new Dictionary<string, int>
-            {
-                {"Január", 1},    {"Február", 2 },     {"Március", 3 },
-                {"Április", 4 },  {"Május", 5},        {"Június", 6 },
-                {"Július", 7},    {"Augusztus", 8 },   {"Szeptember", 9 },
-                {"Október", 10 }, {"November", 11 },   {"December", 12 }
-
-            Console.WriteLine("Hónap?: ");
-            int evszak = honap[Console.ReadLine()];
-
-            // Tavasz
-            if (evszak >= 3 && evszak <= 5)
-            {
-                minMin = -10;
-                minMax = -5;
-                maxMin = 5;
-                maxMax = 16;
-            }
-            // Nyár
-            if (evszak >= 6 && evszak <= 8)
-            {
-                minMin = 7;
-                minMax = 19;
-                maxMin = 25;
-                maxMax = 41;
-
-            }   
-            // Ősz
-            if (evszak >= 9 && evszak <= 11)
-            {   
-                minMin = -6;
-                minMax = -2;
-                maxMin = 5;
-                maxMax = 14;
-
-            }
-            // Tél
-            if (evszak >= 12 && evszak <= 2)
-            {
-                minMin = -22;
-                minMax = -5;
-                maxMin = -2;
-                maxMax = 6;
-            }
-            };
-            int minMin = 0;
-            int minMax = 0;
-            int maxMin = 0;
-            int maxMax = 0;
-        
-        Random rnd = new Random();
-        
-        public void NapiMinHomerseklet()
+        string honap;
+        int nap;
+        int NapiMin, NapiMax;
+        string asd;
+        public void EvszakEldont()
         {
-            for (int n = 1; n <= 30; n++)
+            honap = Convert.ToString(Console.ReadLine());
+            nap = Convert.ToInt32(Console.ReadLine());
+
+            if (honap == "Március")
             {
-                rnd.Next(tart);
+                asd = "wasd";
             }
-            
         }
     }
-
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
-
-
-            
         {
+
+            // Minden napra egy minimum és maximum hőmérséklet.
+            // Ezek évszaktól függően más tartományba esnek.
+
+            // MEGFELELÉS
+            // Beírt napon mennyi volt a min - max és átlaghőmérséklet.
+            // Beírt hónapban mennyi volt a min - max és átlaghőmérséklet.
+            // Beírt évszakban mennyi volt a min - max és átlaghőmérséklet.
+            // Összes adatot tekintve mennyi volt a min - max és átlag értéke.
+            Homerseklet h = new Homerseklet();
+            
+
+            Console.WriteLine("Hónap: ");
+            Console.WriteLine("Nap: ");
+            h.EvszakEldont();
+
             Console.ReadKey();
         }
     }
