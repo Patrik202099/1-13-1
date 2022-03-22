@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VizGozJeg", "VizGozJeg\VizG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MezogazdasagiJoslas", "MezogazdasagiJoslas\MezogazdasagiJoslas.csproj", "{153832D6-6512-4938-BA88-6FF51E3F4C7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homerseklet", "Homerseklet\Homerseklet.csproj", "{6DBF3893-656F-41EB-BFCA-CD3372E0A416}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{153832D6-6512-4938-BA88-6FF51E3F4C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{153832D6-6512-4938-BA88-6FF51E3F4C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{153832D6-6512-4938-BA88-6FF51E3F4C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DBF3893-656F-41EB-BFCA-CD3372E0A416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DBF3893-656F-41EB-BFCA-CD3372E0A416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DBF3893-656F-41EB-BFCA-CD3372E0A416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DBF3893-656F-41EB-BFCA-CD3372E0A416}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
