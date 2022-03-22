@@ -6,20 +6,22 @@ using System.Threading.Tasks;
 
 namespace Homerseklet
 {
-    public class Homerseklet
+    public class Homerseklet(string asd)
     {
         string honap;
         int nap;
         int NapiMin, NapiMax;
-        string asd;
+        asd = "x";
         public void EvszakEldont()
         {
+            Console.WriteLine("Hónap: ");
             honap = Convert.ToString(Console.ReadLine());
-            nap = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Nap: ");
+            this.nap = Convert.ToInt32(Console.ReadLine());
 
             if (honap == "Március")
             {
-                asd = "wasd";
+                this.asd = "wasd";
             }
         }
     }
@@ -37,12 +39,8 @@ namespace Homerseklet
             // Beírt évszakban mennyi volt a min - max és átlaghőmérséklet.
             // Összes adatot tekintve mennyi volt a min - max és átlag értéke.
             Homerseklet h = new Homerseklet();
-            
-
-            Console.WriteLine("Hónap: ");
-            Console.WriteLine("Nap: ");
             h.EvszakEldont();
-
+            Console.WriteLine(this.asd);
             Console.ReadKey();
         }
     }
