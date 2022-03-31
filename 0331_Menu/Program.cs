@@ -37,8 +37,8 @@ namespace _0331_Menu
 
                     case 5:
                         Console.WriteLine("Kilépés 2 másodperc múlva.");
-                        // Thread.Sleep(2000);
-                        Environment.Exit(2000);
+                        Thread.Sleep(2000);
+                        Environment.Exit(0);
                         break;
                 }
             }
