@@ -40,6 +40,10 @@ namespace _0331_Menu
                         Thread.Sleep(2000);
                         Environment.Exit(0);
                         break;
+
+                    default:
+                        Console.WriteLine("Hibás szám! 1-5!");
+                        break;
                 }
             }
        }
