@@ -8,10 +8,20 @@ namespace _0331_Lotto
 {
     class Lotto
     {
-        public void szamGeneral()
+        Random rnd = new Random();
+        int[] lottoSzamok = new int[5];
+
+        public void szamGenFeltolt()
         {
-            int szamok;
-            int[] lottoSzamok = new int[5];
+            for (int i = 0; i < lottoSzamok.Length; i++)
+			{
+                lottoSzamok[i] = rnd.Next(1,6);   
+			}
+
+            foreach (var item in lottoSzamok)
+	        {
+                Console.WriteLine(item);
+	        }
         }
     }
 
@@ -19,6 +29,9 @@ namespace _0331_Lotto
     {
         static void Main(string[] args)
         {
+            Lotto l = new Lotto();
+            l.szamGenFeltolt();
+            Console.ReadKey();
         }
     }
 }
