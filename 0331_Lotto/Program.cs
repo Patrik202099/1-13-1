@@ -16,15 +16,14 @@ namespace _0331_Lotto
         {
             this.rnd = new Random();
             this.lottoSzamok = new int[5];
-            this.vizsgal = rnd.Next(1,6);
+            this.vizsgal = rnd.Next(1,91);
         }
 
         public void szamGenFeltolt()
         {
             for (int i = 0; i < lottoSzamok.Length; i++)
 			{
-                if ()
-                lottoSzamok[i] = rnd.Next(1,6);
+                lottoSzamok[i] = rnd.Next(1,91);
 			}
 
             foreach (var item in lottoSzamok)
