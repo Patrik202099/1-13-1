@@ -8,19 +8,28 @@ namespace _0331_Lotto
 {
     class Lotto
     {
-        Random rnd = new Random();
-        int[] lottoSzamok = new int[5];
+        Random rnd;
+        int[] lottoSzamok;
+        int vizsgal;
+
+        public Lotto()
+        {
+            this.rnd = new Random();
+            this.lottoSzamok = new int[5];
+            this.vizsgal = rnd.Next(1,6);
+        }
 
         public void szamGenFeltolt()
         {
             for (int i = 0; i < lottoSzamok.Length; i++)
 			{
-                lottoSzamok[i] = rnd.Next(1,6);   
+                if ()
+                lottoSzamok[i] = rnd.Next(1,6);
 			}
 
             foreach (var item in lottoSzamok)
 	        {
-                Console.WriteLine(item);
+                Console.WriteLine("Az ötös lottó nyerőszámai: {0}",item);
 	        }
         }
     }
