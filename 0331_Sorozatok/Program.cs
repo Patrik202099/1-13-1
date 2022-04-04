@@ -11,23 +11,26 @@ namespace _0331_Sorozatok
         public void SorVizsgal()
         {
             int [] sorSzamok = new int[4];
-            int kulonbseg; 
+            int diff; 
 
             for (int i = 0; i < sorSzamok.Length; i++)
 			{
                 Console.WriteLine("Szám: ");
                 sorSzamok[i] = Convert.ToInt32(Console.ReadLine());
-                kulonbseg = sorSzamok[3] - sorSzamok[2];
+                diff = sorSzamok[1] - sorSzamok[0];
 
-                if ()
+                if (sorSzamok[1] - sorSzamok[0] == diff && sorSzamok[3] - sorSzamok[2] == diff)
                 {
-                    Console.WriteLine("Számtani sorozat.");
+                    Console.WriteLine("A sorozat differenciálja: {0}", diff);
+                    Console.WriteLine("Számtani sorozatról beszélünk.");
                 }
-                /* else if (sorSzamok[3] % sorSzamok[2] == sorSzamok[2] % sorSzamok[1])
+                else if (sorSzamok[1] / sorSzamok[0] == diff && sorSzamok[3] / sorSzamok[2] == diff)
                 {
-                    Console.WriteLine("Mértani sorozat.");
-                } */
+                    Console.WriteLine("A sorozat differenciálja: {0}", diff);
+                    Console.WriteLine("Mértani sorozatról beszélünk.");
+                }
 			}
+
         }
 
     }
