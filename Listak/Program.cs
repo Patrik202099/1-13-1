@@ -22,7 +22,7 @@ namespace Listak
             // Lista elemek kiíratása
             foreach (var item in szamLista)
             {
-                Console.WriteLine(item);
+                Console.WriteLine("Lista elemei: {0}", item);
             }
         }
     }
