@@ -11,7 +11,7 @@ namespace _0331_Sorozatok
         public void SorVizsgal()
         {
             int [] sorSzamok = new int[4];
-            int kulonbseg;
+            int kulonbseg; 
 
             for (int i = 0; i < sorSzamok.Length; i++)
 			{
