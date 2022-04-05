@@ -8,10 +8,17 @@ namespace Elagazas
 {
     public class Elagazas
     {
+      private Random rnd;
+      private List<int> szamosLista;
+        
+        public class Elagazas()
+        {
+            this.rnd = new Random();
+            this.szamosLista = = new List<int>();
+        }
+
         public void LoadAndRoll()
         {
-            Random rnd = new Random();
-            List<int> szamosLista = new List<int>();
 
             // Lista feltöltése, majd a páros elemek kiíratása.
 

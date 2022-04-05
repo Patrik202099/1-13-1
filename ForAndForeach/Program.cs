@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace ForAndForeach
 {
-    public class ForAndForeach
+    class ForAndForeach
     {
-        Random rnd = new Random();
-        int[] szamTomb = new int[5];
+        private Random rnd;
+        private int[] szamTomb;
+
+        public ForAndForeach()
+        {
+             this.rnd = new Random();
+             this.szamTomb = new int[5];
+        }
         public void Feltoltes()
         {
             this.szamTomb = new int[5];
@@ -28,6 +34,7 @@ namespace ForAndForeach
                 Console.WriteLine("For ciklus segítéségvel kiíratva: {0} ", szamTomb[i]); 
             }
             Console.WriteLine(" ");
+
             // Tömb elemeinek kiíratása foreach segítségével.
             foreach (int item in this.szamTomb)
             {
