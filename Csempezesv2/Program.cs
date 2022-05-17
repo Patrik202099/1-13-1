@@ -16,8 +16,8 @@ namespace Csempezesv2
         public Csempezes()
         {
             this.teruletSzelesseg = 0;
-            this.magassag = 0;
-            this.szukseges = 0;
+            this.magassag = 5;
+            this.szukseges = 5;
             this.csempe = 0.2 * 0.2;
         }
 
@@ -36,7 +36,7 @@ namespace Csempezesv2
         public double getSzukseges()
         {
             this.szukseges = (this.teruletSzelesseg * this.magassag) / this.csempe;
-            return this.szukseges + this.szukseges * 0.1;
+            return Math.Round(this.szukseges + this.szukseges * 0.1,2);
         }
 
     }
