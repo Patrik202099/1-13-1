@@ -8,10 +8,29 @@ namespace HengerTeszt0516
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void KeruletTeszt()
         {
-            
-            Console.ReadKey();
+            Henger hngr = new Henger();
+            double eredmeny = hngr.getKerulet();
+            double vartEredmeny = (31.42);
+
+            Assert.AreEqual(eredmeny, vartEredmeny);
         }
+
+        //public void TeruletTeszt()
+        //{
+        //    Henger hngr = new Henger();
+        //}
+
+        //public void FelszinTeszt()
+        //{
+        //    Henger hngr = new Henger();
+        //}
+
+        //public void TerfogatTeszt()
+        //{
+        //    Henger hngr = new Henger();
+        //}
+
     }
 }

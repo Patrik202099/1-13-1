@@ -10,11 +10,19 @@ namespace Henger0516
     {
         double sugar;
         double magassag;
+        double kerulet;
+        double terulet;
+        double felszin;
+        double terfogat;
 
         public Henger()
         {
             this.sugar = 0;
             this.magassag = 0;
+            this.kerulet = 0;
+            this.terulet = 0;
+            this.felszin = 0;
+            this.terfogat = 0;
         }
 
         public void setSugar()
@@ -31,22 +39,26 @@ namespace Henger0516
 
         public double getKerulet()
         {
-            return 2 * this.sugar * Math.PI;
+            this.kerulet = Math.Round(2 * this.sugar * Math.PI,2);
+            return this.kerulet;
         }
 
         public double getTerulet()
         {
-            return Math.PI * (this.sugar * this.sugar);
+            this.terulet = Math.Round(Math.PI * (this.sugar * this.sugar),2);
+            return this.terulet;
         }
-
+        
         public double getFelszin()
         {
-            return 2 * Math.PI * this.sugar * (this.sugar * this.magassag);
+            this.felszin = Math.Round(2*Math.PI * this.sugar * (this.sugar + this.magassag),2);
+            return this.felszin;
         }
 
         public double getTerfogat()
         {
-            return Math.PI * (this.sugar * this.sugar) * this.magassag;
+            this.terfogat = Math.Round(Math.PI * (this.sugar * this.sugar) * this.magassag,2);
+            return this.terfogat;
         }
 
     }
@@ -57,10 +69,10 @@ namespace Henger0516
             Henger hngr = new Henger();
             hngr.setSugar();
             hngr.setMagassag();
-            Console.WriteLine(hngr.getKerulet());
-            Console.WriteLine(hngr.getTerulet());
-            Console.WriteLine(hngr.getFelszin());
-            Console.WriteLine(hngr.getTerfogat());
+            Console.WriteLine("Kerülete: " + hngr.getKerulet());
+            Console.WriteLine("Területe: " + hngr.getTerulet());
+            Console.WriteLine("Felszíne: " + hngr.getFelszin());
+            Console.WriteLine("Térfogata: " + hngr.getTerfogat());
 
             Console.ReadKey();
         }
