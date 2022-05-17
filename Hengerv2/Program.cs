@@ -17,8 +17,8 @@ namespace Hengerv2
 
         public Henger()
         {
-            this.sugar = 0;
-            this.magassag = 0;
+            this.sugar = 5;
+            this.magassag = 5;
             this.kerulet = 0;
             this.terulet = 0;
             this.felszin = 0;
