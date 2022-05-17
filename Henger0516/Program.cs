@@ -8,12 +8,12 @@ namespace Henger0516
 {
     public class Henger
     {
-        double sugar;
-        double magassag;
-        double kerulet;
-        double terulet;
-        double felszin;
-        double terfogat;
+        public double sugar;
+        public double magassag;
+        public double kerulet;
+        public double terulet;
+        public double felszin;
+        public double terfogat;
 
         public Henger()
         {

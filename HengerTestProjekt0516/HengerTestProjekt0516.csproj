@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{98A7C183-D65D-49EA-9AAD-BD024DA87804}</ProjectGuid>
+    <ProjectGuid>{F8211061-6E16-4E60-96E6-0EBDE9B159AF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HengerTeszt0516</RootNamespace>
-    <AssemblyName>HengerTeszt0516</AssemblyName>
+    <RootNamespace>HengerTestProjekt0516</RootNamespace>
+    <AssemblyName>HengerTestProjekt0516</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -54,12 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Henger0516\Henger0516.csproj">
-      <Project>{5977029a-55a1-4476-afae-6821d0d20718}</Project>
-      <Name>Henger0516</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
