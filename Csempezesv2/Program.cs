@@ -8,10 +8,10 @@ namespace Csempezesv2
 {
     public class Csempezes
     {
-         public double teruletSzelesseg;
-         public double magassag;
-         public double szukseges;
-         public double csempe;
+        public double teruletSzelesseg;
+        public double magassag;
+        public double szukseges;
+        public double csempe;
 
         public Csempezes()
         {
@@ -44,9 +44,14 @@ namespace Csempezesv2
     {
         static void Main(string[] args)
         {
-            
+
+            Csempezes csempek = new Csempezes();
+            csempek.setSzelesseg();
+            csempek.setMagassag();
+            Console.WriteLine(csempek.getSzukseges() + " darab csempe szükséges.");
 
             Console.ReadKey();
 
         }
     }
+}
