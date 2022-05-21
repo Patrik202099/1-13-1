@@ -1,0 +1,5 @@
+Kiss Adam|1999.02.14|F|7
+Jakab Tunde|1988.05.24|N|6
+Rozsa Jolan|1962.03.15|N|4
+Remedi Armand|1989.06.11|F|6
+Nomad Erno|1974.09.11|F|3

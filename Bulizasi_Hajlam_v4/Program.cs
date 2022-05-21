@@ -11,8 +11,11 @@ namespace Bulizasi_Hajlam_v2
     {
         public string nev;
         public DateTime szuletesiDatum;
-        public char nem;
+        public string nem;
         public int bulizasiHajlam;
+        public string eleresiUt;
+        public string fajlNev;
+        public List<string> rekordLista;
 
         public BaratRekordok()
         {
@@ -20,15 +23,24 @@ namespace Bulizasi_Hajlam_v2
             this.szuletesiDatum = new DateTime();
             this.nem = "";
             this.bulizasiHajlam = 0;
+            this.eleresiUt = @"C:\Users\vexpl\Source\Repos\Patrik202099\1-13-1\Bulizasi_Hajlam_v4\";
+            this.fajlNev = "";
+            this.rekordLista = new List<string>();
         }
 
         public void Beolvasas()
         {
+            Console.WriteLine("Add meg a fájl nevét: ");
+            this.fajlNev = Convert.ToString(Console.ReadLine());
+
+            // Sorok beolvasása
+            this.rekordLista = File.ReadAllLines(this.eleresiUt + this.fajlNev).ToList();
+        }
+
+        public void Kiiratas()
+        {
 
         }
-        // Rekordok beolvasása, listába helyezésük
-        // 'Táblázatba' rendezés, majd kiíratás.
-        // Metódusok: Beolvasas |  Kiiratas
     }
     public class Program
     {
@@ -36,6 +48,8 @@ namespace Bulizasi_Hajlam_v2
         {
             BaratRekordok bRekords = new BaratRekordok();
             bRekords.Beolvasas();
+            bRekords.Kiiratas();
+
             Console.ReadKey();
         }
     }
