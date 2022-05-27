@@ -45,7 +45,7 @@ namespace Calculator_0527
         {
             Szamologep calculator = new Szamologep();
             calculator.ErtekBeker();
-            calculator.Szamolas();
+            Console.WriteLine("Az eredmény: " + calculator.Szamolas());
 
             Console.ReadKey();
         }
