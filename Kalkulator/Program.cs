@@ -19,15 +19,14 @@ namespace Kalkulator
 
         public void ErtekBeker()
         {
-            Console.WriteLine("Első szám: ");
+            //Console.WriteLine("Első szám: ");
             this.elsoNum = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Operátor: ");
+            //Console.WriteLine("Operátor: ");
             this.oper = Convert.ToChar(Console.ReadLine());
 
-            Console.WriteLine("Második szám: ");
+            //Console.WriteLine("Második szám: ");
             this.masodikNum = Convert.ToDouble(Console.ReadLine());
-
         }
 
         public double Szamolas()
@@ -45,8 +44,8 @@ namespace Kalkulator
         {
             Szamologep calculator = new Szamologep();
             calculator.ErtekBeker();
-            Console.WriteLine("Az eredmény: " + calculator.Szamolas());
 
+            Console.WriteLine("Az eredmény: " + calculator.Szamolas());
             Console.ReadKey();
         }
     }
