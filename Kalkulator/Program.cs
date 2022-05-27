@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator_0527
+namespace Kalkulator
 {
     public class Szamologep
     {

@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csempezesv2_teszt", "Csempe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElsoForm_v2", "ElsoForm_v2\ElsoForm_v2.csproj", "{AD03097E-9F15-4625-897F-3857F70F999F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalkulatorUt", "KalkulatorUt\KalkulatorUt.csproj", "{328648A5-29ED-4DBD-A852-A83DD372C138}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalkulator", "Kalkulator\Kalkulator.csproj", "{387C361B-89FF-463C-AE9D-059D0E515A9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{AD03097E-9F15-4625-897F-3857F70F999F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD03097E-9F15-4625-897F-3857F70F999F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD03097E-9F15-4625-897F-3857F70F999F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328648A5-29ED-4DBD-A852-A83DD372C138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328648A5-29ED-4DBD-A852-A83DD372C138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328648A5-29ED-4DBD-A852-A83DD372C138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328648A5-29ED-4DBD-A852-A83DD372C138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{387C361B-89FF-463C-AE9D-059D0E515A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{387C361B-89FF-463C-AE9D-059D0E515A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{387C361B-89FF-463C-AE9D-059D0E515A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{387C361B-89FF-463C-AE9D-059D0E515A9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

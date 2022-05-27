@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Calculator_0527;
+using Kalkulator;
 
 namespace KalkulatorUt
 {

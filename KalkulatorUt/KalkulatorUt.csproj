@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E06ADE8B-2524-43DB-9D64-F5E82E4805C3}</ProjectGuid>
+    <ProjectGuid>{328648A5-29ED-4DBD-A852-A83DD372C138}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>KalkulatorUt</RootNamespace>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calculator_0527\Calculator_0527.csproj">
-      <Project>{037466e8-9746-43d2-bad2-9f46585f3f23}</Project>
-      <Name>Calculator_0527</Name>
+    <ProjectReference Include="..\Kalkulator\Kalkulator.csproj">
+      <Project>{387c361b-89ff-463c-ae9d-059d0e515a9b}</Project>
+      <Name>Kalkulator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
