@@ -130,5 +130,20 @@ namespace KalkulatorUt
             Assert.AreNotEqual(szorzasVartEredmeny, kapottEredmeny);
         }
 
+        [TestMethod]
+        public void nullaval_Osztas()
+        {
+            Szamologep calculator = new Szamologep();
+
+            var nullaOsztas = new StringReader("10\r\n/\r\n0");
+            char nullaOsztasVartEredmeny = '?';
+
+            Console.SetIn(nullaOsztas);
+            calculator.ErtekBeker();
+
+            double kapottEredmeny = Convert.ToChar(calculator.Szamolas());
+            Assert.AreEqual(nullaOsztasVartEredmeny, kapottEredmeny);
+
+        }
     }
 }
