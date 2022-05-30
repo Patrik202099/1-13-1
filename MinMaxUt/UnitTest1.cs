@@ -30,16 +30,26 @@ namespace MinMaxUt
             Assert.AreEqual(vartEredmeny, kapottEredmeny);
         }
 
-        //[TestMethod]
-        //public void minimum_RosszErtek()
-        //{
+        [TestMethod]
+        public void minimum_RosszErtek()
+        {
+            minMax_Kereses MinVagyMax = new minMax_Kereses();
 
-        //}
+            int vartEredmeny = 1;
+            int kapottEredmeny = MinVagyMax.Min_Kereses();
 
-        //[TestMethod]
-        //public void maximum_RosszErtek()
-        //{
+            Assert.AreNotEqual(vartEredmeny, kapottEredmeny);
+        }
 
-        //}
+        [TestMethod]
+        public void maximum_RosszErtek()
+        {
+            minMax_Kereses MinVagyMax = new minMax_Kereses();
+
+            int vartEredmeny = 100;
+            int kapottEredmeny = MinVagyMax.Max_Kereses();
+
+            Assert.AreNotEqual(vartEredmeny, kapottEredmeny);
+        }
     }
 }
