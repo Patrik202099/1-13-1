@@ -24,14 +24,14 @@ namespace minMax
            // }
        // }
 
-        public void TombKiirat()
-        {
-            Console.WriteLine("\n");
-            foreach (var item in this.szamTomb)
-            {
-                Console.WriteLine("A tömb eleme: "+ item);
-            }
-        }
+        //public void TombKiirat()
+        //{
+           // Console.WriteLine("\n");
+            //foreach (var item in this.szamTomb)
+            //{
+            //    Console.WriteLine("A tömb eleme: "+ item);
+           // }
+       // }
 
         public int Min_Kereses()
         {
@@ -49,7 +49,7 @@ namespace minMax
             {
                 minMax_Kereses minorMax = new minMax_Kereses();
                 //minorMax.TombToltes();
-                minorMax.TombKiirat();
+                //minorMax.TombKiirat();
                 Console.WriteLine("\nA tömb minimum értéke: " + minorMax.Min_Kereses());
                 Console.WriteLine("A tömb maximum értéke: " + minorMax.Max_Kereses());
 
