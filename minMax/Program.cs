@@ -33,15 +33,15 @@ namespace minMax
             }
         }
 
-        public void Min_Kereses()
+        public int Min_Kereses()
         {
             Array.Sort(this.szamTomb);
-            Console.WriteLine("\nA tömb minimum értéke: "+ this.szamTomb[0]);
+            return this.szamTomb[0];
         }
 
-        public void Max_Kereses()
+        public int Max_Kereses()
         {
-            Console.WriteLine("A tömb maximum értéke: "+ this.szamTomb[9]);
+            return this.szamTomb[9];
         }
         class Program
         {
@@ -50,8 +50,8 @@ namespace minMax
                 minMax_Kereses minorMax = new minMax_Kereses();
                 minorMax.TombToltes();
                 minorMax.TombKiirat();
-                minorMax.Min_Kereses();
-                minorMax.Max_Kereses();
+                Console.WriteLine("\nA tömb minimum értéke: " + minorMax.Min_Kereses());
+                Console.WriteLine("A tömb maximum értéke: " + minorMax.Max_Kereses());
 
                 Console.ReadKey();
             }
