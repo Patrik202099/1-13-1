@@ -13,7 +13,6 @@ namespace MinMaxUt
         {
             minMax_Kereses MinVagyMax = new minMax_Kereses();
 
-            MinVagyMax.TombToltes();
             int vartEredmeny = 1;
             int kapottEredmeny = MinVagyMax.Min_Kereses();
 
@@ -25,7 +24,6 @@ namespace MinMaxUt
         {
             minMax_Kereses MinVagyMax = new minMax_Kereses();
 
-            MinVagyMax.TombToltes();
             int vartEredmeny = 100;
             int kapottEredmeny = MinVagyMax.Max_Kereses();
 

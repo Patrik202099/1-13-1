@@ -11,18 +11,18 @@ namespace minMax
         int[] szamTomb;
         public minMax_Kereses()
         {
-            this.szamTomb = new int[10];
+            this.szamTomb = new int[] {1,3,13,25,100};
         }
 
-        public void TombToltes()
-        {
-            for (int i = 0; i < this.szamTomb.Length; i++)
-            {
-                Console.WriteLine("Számot!: ");
-                this.szamTomb[i] = Convert.ToInt32(Console.ReadLine());
+       //public void TombToltes()
+        //{
+           // for (int i = 0; i < this.szamTomb.Length; i++)
+           // {
+              //  Console.WriteLine("Számot!: ");
+              //  this.szamTomb[i] = Convert.ToInt32(Console.ReadLine());
 
-            }
-        }
+           // }
+       // }
 
         public void TombKiirat()
         {
@@ -41,14 +41,14 @@ namespace minMax
 
         public int Max_Kereses()
         {
-            return this.szamTomb[9];
+            return this.szamTomb[4];
         }
         class Program
         {
             static void Main(string[] args)
             {
                 minMax_Kereses minorMax = new minMax_Kereses();
-                minorMax.TombToltes();
+                //minorMax.TombToltes();
                 minorMax.TombKiirat();
                 Console.WriteLine("\nA tömb minimum értéke: " + minorMax.Min_Kereses());
                 Console.WriteLine("A tömb maximum értéke: " + minorMax.Max_Kereses());
