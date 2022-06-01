@@ -19,26 +19,30 @@ namespace KepetForgat
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Image a = label7.Image;
-            label7.Image = label8.Image;
-            label8.Image = label6.Image;
+            Image a = label8.Image;
+            label8.Image = label7.Image;
+            label7.Image = label6.Image;
             label6.Image = label5.Image;
+            label5.Image = label4.Image;
             label4.Image = label3.Image;
+            label3.Image = label2.Image;
             label2.Image = label1.Image;
-           
+
             label1.Image = a;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Image a = label7.Image;
+            Image b = label1.Image;
+            label1.Image = label2.Image;
+            label2.Image = label3.Image;
+            label3.Image = label4.Image;
+            label4.Image = label5.Image;
+            label5.Image = label6.Image;
+            label6.Image = label7.Image;
             label7.Image = label8.Image;
-            label8.Image = label6.Image;
-            label6.Image = label5.Image;
-            label4.Image = label3.Image;
-            label2.Image = label1.Image;
 
-            label1.Image = a;
+            label1.Image = b;
         }
     }
 }
