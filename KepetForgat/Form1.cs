@@ -42,7 +42,7 @@ namespace KepetForgat
             label6.Image = label7.Image;
             label7.Image = label8.Image;
 
-            label1.Image = b;
+            label8.Image = b;
         }
     }
 }
