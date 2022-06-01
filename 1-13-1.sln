@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sziget", "Sziget\Sziget.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KepetForgat", "KepetForgat\KepetForgat.csproj", "{D419905C-1C77-49D1-9016-EE08B0AAAD25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "futasidejuKomponens", "futasidejuKomponens\futasidejuKomponens.csproj", "{DE4795AF-D459-41F6-A4D8-F5491D13450C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{D419905C-1C77-49D1-9016-EE08B0AAAD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D419905C-1C77-49D1-9016-EE08B0AAAD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D419905C-1C77-49D1-9016-EE08B0AAAD25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE4795AF-D459-41F6-A4D8-F5491D13450C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE4795AF-D459-41F6-A4D8-F5491D13450C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE4795AF-D459-41F6-A4D8-F5491D13450C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE4795AF-D459-41F6-A4D8-F5491D13450C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
