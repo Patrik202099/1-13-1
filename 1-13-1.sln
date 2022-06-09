@@ -53,6 +53,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "halmazokForm", "halmazokFor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sziget_Teszt", "sziget_Teszt\sziget_Teszt.csproj", "{5116F4C2-2E39-4775-A3A6-F9B4D3F1AB71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tesla", "tesla\tesla.csproj", "{B8ABA181-6F00-42A3-B44C-FA14BB050460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tesla_teszt", "tesla_teszt\tesla_teszt.csproj", "{7518B338-19C7-4CA0-BE40-3EA363F1AC21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +163,14 @@ Global
 		{5116F4C2-2E39-4775-A3A6-F9B4D3F1AB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5116F4C2-2E39-4775-A3A6-F9B4D3F1AB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5116F4C2-2E39-4775-A3A6-F9B4D3F1AB71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8ABA181-6F00-42A3-B44C-FA14BB050460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8ABA181-6F00-42A3-B44C-FA14BB050460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8ABA181-6F00-42A3-B44C-FA14BB050460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8ABA181-6F00-42A3-B44C-FA14BB050460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7518B338-19C7-4CA0-BE40-3EA363F1AC21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7518B338-19C7-4CA0-BE40-3EA363F1AC21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7518B338-19C7-4CA0-BE40-3EA363F1AC21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7518B338-19C7-4CA0-BE40-3EA363F1AC21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
