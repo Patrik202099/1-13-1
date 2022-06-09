@@ -4,34 +4,83 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sziget
+namespace sziget
 {
-    public class SzigetHosszok
+    public class Sziget
     {
-        string szigetErtekek;
+        int islandCount = 0;
+        int maxIslandLength = 0;
+        int i = 0;
+        string data = "010111110000101";
 
-        public SzigetHosszok()
+        public Sziget() { }
+
+        public int szigetszam()
         {
-            this.szigetErtekek = "0111001100";
+            while (i < data.Length)
+            {
+                if (data[i] == '1')
+                {
+                    ++islandCount;
+                    int j = i;
+                    int tmp = 0;
+
+                    while (j < data.Length && data[j] == '1')
+                    {
+                        ++j;
+                        ++tmp;
+                    }
+                    i = j;
+                    if (tmp > maxIslandLength)
+                    {
+                        maxIslandLength = tmp;
+                    }
+                }
+                else
+                {
+                    ++i;
+                }
+            }
+            return islandCount;
         }
 
-        public int szigetDrbSz()
+        public int szigethossz()
         {
+            while (i < data.Length)
+            {
+                if (data[i] == '1')
+                {
+                    ++islandCount;
+                    int j = i;
+                    int tmp = 0;
 
-        }
-
-        public int hosszVizsgalat()
-        {
-            
+                    while (j < data.Length && data[j] == '1')
+                    {
+                        ++j;
+                        ++tmp;
+                    }
+                    i = j;
+                    if (tmp > maxIslandLength)
+                    {
+                        maxIslandLength = tmp;
+                    }
+                }
+                else
+                {
+                    ++i;
+                }
+            }
+            return maxIslandLength;
         }
     }
+
     class Program
     {
         static void Main(string[] args)
         {
-            SzigetHosszok szigetHossz = new SzigetHosszok();
-            Console.WriteLine("Szigetek száma: " + szigetHossz.szigetDrbSz());
-            Console.WriteLine("Leghosszabb sziget hossza: "+ szigetHossz.hosszVizsgalat());
+            Sziget s = new Sziget();
+            Console.WriteLine(s.szigethossz());
+            Console.WriteLine(s.szigetszam());
 
             Console.ReadKey();
         }
