@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "futasidejuKomponens", "futa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "halmazokForm", "halmazokForm\halmazokForm.csproj", "{2A3E22B5-DAD4-4D82-ABEF-8F6B00D5D670}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sziget_Teszt", "sziget_Teszt\sziget_Teszt.csproj", "{5116F4C2-2E39-4775-A3A6-F9B4D3F1AB71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{2A3E22B5-DAD4-4D82-ABEF-8F6B00D5D670}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A3E22B5-DAD4-4D82-ABEF-8F6B00D5D670}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A3E22B5-DAD4-4D82-ABEF-8F6B00D5D670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5116F4C2-2E39-4775-A3A6-F9B4D3F1AB71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5116F4C2-2E39-4775-A3A6-F9B4D3F1AB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5116F4C2-2E39-4775-A3A6-F9B4D3F1AB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5116F4C2-2E39-4775-A3A6-F9B4D3F1AB71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
